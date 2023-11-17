@@ -4,605 +4,683 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="#">
+    <title>ФОРМА</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
+
+        <div>Заявление на получение приглашения в МПГУ</div>
+
+
+
         <form action="#" method="POST" id="main_form" name="main_form">
-            <section>
-                <fieldset>
-                    <legend for = "citizenship">Гражданство (подданство)</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.citizenship" value="Китай">Китай
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.citizenship" value="Туркменистан">Туркменистан
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.citizenship" value="Монголия">Монголия
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.citizenship" value="Другое">Другое:
-                            </label>
-                            <input type="text" name="entry.citizenship.other_option" id="">
-                        </li>
-                    </ul>
+
+            <div class="prog_list">
+                <div class="prog_list_active" id="prog_list_1">Основная информация</div>
+                <div class="prog_list_un" id="prog_list_2">Паспортные данные</div>
+                <div class="prog_list_un" id="prog_list_3">Домашний адрес</div>
+                <div class="prog_list_un" id="prog_list_4">Дополнительная информация</div>
+            </div>
+
+            <div id="panel-1">
+                
+                <fieldset class="field">
+                    <div class="field_name_q">Гражданство (подданство)</div>
+                    <div class="field_name_a req">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.citizenship" value="Китай">Китай
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.citizenship" value="Туркменистан">Туркменистан
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.citizenship" value="Монголия">Монголия
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.citizenship" value="Другое">Другое:
+                                </label>
+                                <input type="text" name="entry.citizenship.other_option" id="">
+                            </li>
+                        </ul>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
+                </fieldset>
+                
+
+                <fieldset class="field">
+                    <div class="field_name_q">Цель поездки</div>
+                    <div class="field_name_a req">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.purpose" id="" value="УЧЕБА">УЧЕБА
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.purpose" id="" value="УЧЕБА (ПОДГОТОВИТЕЛЬНЫЙ ФАКУЛЬТЕТ)">УЧЕБА (ПОДГОТОВИТЕЛЬНЫЙ ФАКУЛЬТЕТ)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.purpose" id="" value="УЧЕБА (СТАЖИРОВКА/МЕЖВУЗ)">УЧЕБА (СТАЖИРОВКА/МЕЖВУЗ)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.purpose" id="" value="ТРУДОВАЯ ДЕЯТЕЛЬНОСТЬ">ТРУДОВАЯ ДЕЯТЕЛЬНОСТЬ
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.purpose" id="" value="НАУЧНО-ТЕХНИЧЕСКИЕ СВЯЗИ">НАУЧНО-ТЕХНИЧЕСКИЕ СВЯЗИ
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.purpose" id="" value="ЗАЩИТА ДИССЕРТАЦИИ">ЗАЩИТА ДИССЕРТАЦИИ
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="purpose">Цель поездки</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.purpose" id="" value="УЧЕБА">УЧЕБА
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.purpose" id="" value="УЧЕБА (ПОДГОТОВИТЕЛЬНЫЙ ФАКУЛЬТЕТ)">УЧЕБА (ПОДГОТОВИТЕЛЬНЫЙ ФАКУЛЬТЕТ)
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.purpose" id="" value="УЧЕБА (СТАЖИРОВКА/МЕЖВУЗ)">УЧЕБА (СТАЖИРОВКА/МЕЖВУЗ)
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.purpose" id="" value="ТРУДОВАЯ ДЕЯТЕЛЬНОСТЬ">ТРУДОВАЯ ДЕЯТЕЛЬНОСТЬ
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.purpose" id="" value="НАУЧНО-ТЕХНИЧЕСКИЕ СВЯЗИ">НАУЧНО-ТЕХНИЧЕСКИЕ СВЯЗИ
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.purpose" id="" value="ЗАЩИТА ДИССЕРТАЦИИ">ЗАЩИТА ДИССЕРТАЦИИ
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">Тип финансирования</div>
+                    <div class="field_name_a check">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.type_of_funding" id="" value="бюджет (Государство оплачивает мое обучение)">бюджет (Государство оплачивает мое обучение)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.type_of_funding" id="" value="договор (я плачу за обучение)">договор (я плачу за обучение)
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="type_of_funding">Тип финансирования</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.type_of_funding" id="" value="бюджет (Государство оплачивает мое обучение)">бюджет (Государство оплачивает мое обучение)
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.type_of_funding" id="" value="договор (я плачу за обучение)">договор (я плачу за обучение)
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">Институт &amp Факультет</div>
+                    <div class="field_name_a">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт изящных искусств: Факультет музыкального искусства">Институт изящных искусств: Факультет музыкального искусства
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт изящных искусств: Художественно-графический факультет">Институт изящных искусств: Художественно-графический факультет
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт социально-гуманитарного образования">Институт социально-гуманитарного образования
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт филологии">Институт филологии
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт иностранных языков">Институт иностранных языков
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт международного образования">Институт международного образования
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт детства">Институт детства
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт биологии и химии">Институт биологии и химии
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт физики, технологии и информационных систем">Институт физики, технологии и информационных систем
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт физической культуры, спорта и здоровья">Институт физической культуры, спорта и здоровья
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Географический факультет">Географический факультет
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт истории и политики">Институт истории и политики
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт математики и информатики">Институт математики и информатики
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Факультет дошкольной педагогики и психологии">Факультет дошкольной педагогики и психологии
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт педагогики и психологии">Институт педагогики и психологии
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт журналистики, коммуникаций и медиаобразования">Институт журналистики, коммуникаций и медиаобразования
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Институт развития цифрового образования">Институт развития цифрового образования
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.institute" id="" value="Подготовительный факультет">Подготовительный факультет
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="institute">Институт &amp Факультет</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт изящных искусств: Факультет музыкального искусства">Институт изящных искусств: Факультет музыкального искусства
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт изящных искусств: Художественно-графический факультет">Институт изящных искусств: Художественно-графический факультет
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт социально-гуманитарного образования">Институт социально-гуманитарного образования
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт филологии">Институт филологии
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт иностранных языков">Институт иностранных языков
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт международного образования">Институт международного образования
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт детства">Институт детства
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт биологии и химии">Институт биологии и химии
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт физики, технологии и информационных систем">Институт физики, технологии и информационных систем
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт физической культуры, спорта и здоровья">Институт физической культуры, спорта и здоровья
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Географический факультет">Географический факультет
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт истории и политики">Институт истории и политики
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт математики и информатики">Институт математики и информатики
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Факультет дошкольной педагогики и психологии">Факультет дошкольной педагогики и психологии
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт педагогики и психологии">Институт педагогики и психологии
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт журналистики, коммуникаций и медиаобразования">Институт журналистики, коммуникаций и медиаобразования
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Институт развития цифрового образования">Институт развития цифрового образования
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.institute" id="" value="Подготовительный факультет">Подготовительный факультет
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">УРОВЕНЬ ОБРАЗОВАНИЯ</div>
+                    <div class="field_name_a check">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.level_of_education" id="" value="Подготовительный факультет (изучаю русский язык)">Подготовительный факультет (изучаю русский язык)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.level_of_education" id="" value="бакалавриат">бакалавриат
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.level_of_education" id="" value="магистратура">магистратура
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.level_of_education" id="" value="аспирантура">аспирантура
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="level_of_education">УРОВЕНЬ ОБРАЗОВАНИЯ</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.level_of_education" id="" value="Подготовительный факультет (изучаю русский язык)">Подготовительный факультет (изучаю русский язык)
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.level_of_education" id="" value="бакалавриат">бакалавриат
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.level_of_education" id="" value="магистратура">магистратура
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.level_of_education" id="" value="аспирантура">аспирантура
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">Курс обучения</div>
+                    <div class="field_name_a check">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.year_of_studyng" id="" value="Подготовительный факультет (изучаю русский язык)">Подготовительный факультет (изучаю русский язык)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.year_of_studyng" id="" value="1">1
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.year_of_studyng" id="" value="2">2
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.year_of_studyng" id="" value="3">3
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.year_of_studyng" id="" value="4">4
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.year_of_studyng" id="" value="5">5
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="year_of_studyng">Курс обучения</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.year_of_studyng" id="" value="Подготовительный факультет (изучаю русский язык)">Подготовительный факультет (изучаю русский язык)
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.year_of_studyng" id="" value="1">1
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.year_of_studyng" id="" value="2">2
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.year_of_studyng" id="" value="3">3
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.year_of_studyng" id="" value="4">4
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.year_of_studyng" id="" value="5">5
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">ФАМИЛИЯ (На русском языке)</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.second_name_ru" id="" required pattern="[А-Яа-яЁё ]+">
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="second_name_ru">ФАМИЛИЯ (На русском языке)</legend>
-                    <input type="text" name="entry.second_name_ru" id="">
-                </fieldset>
-
-                <fieldset>
-                    <legend for="second_name_en">ФАМИЛИЯ (На английском языке)</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">ФАМИЛИЯ (На английском языке)</div>
                     <div class="img">
                         <img src="img/secNameEn.png" alt="">
                     </div>
-                    <input type="text" name="entry.second_name_en" id="">
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.second_name_en" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="first_name_ru">ИМЯ (На русском языке)</legend>
-                    <input type="text" name="entry.first_name_ru" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">ИМЯ (На русском языке)</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.first_name_ru" id="" required pattern="[А-Яа-яЁё ]+">
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="first_name_en">ИМЯ (На английском языке)</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">ИМЯ (На английском языке)</div>
                     <div class="img">
                         <img src="img/firstNameEn.png" alt="">
                     </div>
-                    <input type="text" name="entry.first_name_en" id="">
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.first_name_en" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="date_of_birth">Год рождения</legend>
-                    <input type="date" name="entry.date_of_birth" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">Год рождения</div>
+                    <div class="field_name_a req">
+                        <input type="date" name="entry.date_of_birth" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-            </section>
+                <div class="buttons">
+                    <div class="but_next" onclick="validNext(this)">Далее</div>
+                </div>
+            </div>
 
-            <section>
-                <fieldset>
-                    <legend for="num_passport">&numero; паспорта</legend>
+            <div id="panel-2" hidden>
+                <fieldset class="field">
+                    <div class="field_name_q">&numero; паспорта</div>
                     <div class="img">
                         <img src="img/numPassport.png" alt="">
                     </div>
-                    <input type="text" name="entry.num_passport" id="">
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.num_passport" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="date_of_issue">Дата выдачи</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">Дата выдачи</div>
                     <div class="img">
                         <img src="img/dateIssuePassp.png" alt="">
                     </div>
-                    <input type="text" name="entry.date_of_issue" id="">
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.date_of_issue" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="date_of_expiry">Срок действия паспорта</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">Срок действия паспорта</div>
                     <div class="img">
                         <img src="img/dateExpiryPassp.png" alt="">
                     </div>
-                    <input type="text" name="entry.date_of_expiry" id="">
+                    <div class="field_name_a req">
+                        <input type="date" name="entry.date_of_expiry" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="sex">Пол</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.sex" id="" value="Мужской">Мужской
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.sex" id="" value="Женский">Женский
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">Пол</div>
+                    <div class="field_name_a req">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.sex" id="" value="Мужской">Мужской
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.sex" id="" value="Женский">Женский
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="country_of_birth">Государство рождения</legend>
-                    <input type="text" name="entry.country_of_birth" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">Государство рождения</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.country_of_birth" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="place_of_birth">Место рождения (из паспорта)</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">Место рождения (из паспорта)</div>
                     <div class="img">
                         <img src="img/placeBirthPassp.png" alt="">
                     </div>
-                    <input type="text" name="entry.place_of_birth" id="">
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.place_of_birth" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for = "authority">Гражданство (подданство)</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">Кем выдан документ/ Authority</div>
                     <div class="img">
                         <img src="img/authorityPassp.png" alt="">
                     </div>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.authority" id="" value="MPS Exit & Entry Administration / Управление по делам выезда и въезда Министерства общественной безопасности"> MPS Exit & Entry Administration / Управление по делам выезда и въезда Министерства общественной безопасности
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.authority" id="" value="National Immigration Administration, RPC/ Национальное иммиграционное управление Китайской Народной Республики"> National Immigration Administration, RPC/ Национальное иммиграционное управление Китайской Народной Республики
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.authority" id="" value="Другое"> Другое:
-                            </label>
-                            <input type="text" name="entry.authority.other_option" id="">
-                        </li>
-                    </ul>
+                    <div class="field_name_a req">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.authority" id="" value="MPS Exit & Entry Administration / Управление по делам выезда и въезда Министерства общественной безопасности"> MPS Exit & Entry Administration / Управление по делам выезда и въезда Министерства общественной безопасности
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.authority" id="" value="National Immigration Administration, RPC/ Национальное иммиграционное управление Китайской Народной Республики"> National Immigration Administration, RPC/ Национальное иммиграционное управление Китайской Народной Республики
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.authority" id="" value="Другое"> Другое:
+                                </label>
+                                <input type="text" name="entry.authority.other_option" id="">
+                            </li>
+                        </ul>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="permanent_residency">Государство постоянного проживания</legend>
-                    <input type="text" name="entry.permanent_residency" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">Государство постоянного проживания</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.permanent_residency" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="upload_copy_passport">Загрузите копию паспорта (первая страница) или отправьте на данный E-mail visa.mpgu@bk.ru в формате PDF</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">Загрузите копию паспорта (первая страница) или отправьте на данный E-mail visa.mpgu@bk.ru в формате PDF</div>
                     <p>Сделать ксерокопию паспорта несложно. Вам нужно открыть свой паспорт на 2-й странице, где указана личная информация и есть фотография. Положите паспорт на копировальный аппарат, проверьте настройки копирования. Вся информация в паспорте должна быть хорошо видна без размытий. При копировании учтите данные требования:  1)ксерокопию рекомендуется делать в цвете, если файл хранится на устройстве, он должен иметь хорошее разрешение 2) если Вы пользуйтесь сканнером в телефоне, убедитесь, что паспорт лежит ровно и без наклонов, копии паспорта с изображением рук или других посторонних предметов в кадре также не принимаются 3) Не забудьте отсканировать весь разворот паспорта.</p>
                     <div class="img">
                         <img src="img/copyPassp.jpg" alt="">
                     </div>
-                    <div class="file">
+                    <div class="field_name_a">
                         <input type="file" name="file" id="">
                     </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for = "visa_application_center">Место получения визы</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">Место получения визы</div>
                     <p>В данном поле формы Вам нужно указать тот город с Посольством/Консульским отделом РФ в Вашей стране, который находится ближе к Вам ( СПИСОК: https://www.kdmid.ru/docs/ ). Виза будет выдаваться на основе электронного приглашения, которое будет направлено туда полной формой. Краткая форма (без ФИО) будет выслана Вам на электронную почту. Если нужного варианта нет в готовом списке, то внесите нужный Вам город с Посольством/Консульским отделом РФ в строку " Другое"</p>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Пекин"> Пекин
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Шанхай"> Шанхай
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Шэньян"> Шэньян
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Гуанчжоу"> Гуанчжоу
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Анкара"> Анкара
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Стамбул"> Стамбул
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Анталья"> Анталья
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Ашхабад"> Ашхабад
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Туркменбаши"> Туркменбаши
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Улан-Батор"> Улан-Батор
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Дархан"> Дархан
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.visa_application_center" id="" value="Другое"> Другое:
-                            </label>
-                            <input type="text" name="entry.visa_application_center.other_option" id="">
-                        </li>
-                    </ul>
+                    <div class="field_name_a req">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Пекин"> Пекин
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Шанхай"> Шанхай
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Шэньян"> Шэньян
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Гуанчжоу"> Гуанчжоу
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Анкара"> Анкара
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Стамбул"> Стамбул
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Анталья"> Анталья
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Ашхабад"> Ашхабад
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Туркменбаши"> Туркменбаши
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Улан-Батор"> Улан-Батор
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Дархан"> Дархан
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.visa_application_center" id="" value="Другое"> Другое:
+                                </label>
+                                <input type="text" name="entry.visa_application_center.other_option" id="">
+                            </li>
+                        </ul>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="study_place_address">Адрес места работы или учебы</legend>
+                <fieldset class="field">
+                    <div class="field_name_q">Адрес места работы или учебы</div>
                     <p>Заполните данное поле, если Вы работаете/учитесь в университете в своей стране и приезжаете по академической мобильности</p>
-                    <input type="text" name="entry.study_place_address" id="">
-                </fieldset>
-            </section>
-
-            <section>
-                <fieldset>
-                    <legend for="country_home_address">Страна</legend>
-                    <input type="text" name="entry.country_home_address" id="">
+                    <div class="field_name_a">
+                        <input type="text" name="entry.study_place_address" id="">
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="province_home_address">Провинция</legend>
-                    <input type="text" name="entry.province_home_address" id="">
+                <div class="buttons">
+                    <div class="but_back" onclick="button_back(this)">Назад</div>
+                    <div class="but_next" onclick="validNext(this)">Далее</div>
+                </div>
+
+            </div>
+
+            <div id="panel-3" hidden>
+                <fieldset class="field">
+                    <div class="field_name_q">Страна</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.country_home_address" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="city_home_address">Город</legend>
-                    <input type="text" name="entry.city_home_address" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">Провинция</div>
+                    <div class="field_name_a">
+                        <input type="text" name="entry.province_home_address" id="">
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="street_home_address">Улица</legend>
-                    <input type="text" name="entry.street_home_address" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">Город</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.city_home_address" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="building_home_address">&numero; дома</legend>
-                    <input type="text" name="entry.building_home_address" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">Улица</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.street_home_address" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="apt_home_address">Квартира</legend>
-                    <input type="text" name="entry.apt_home_address" id="">
-                </fieldset>
-            </section>
-
-            <section>
-                <fieldset>
-                    <legend for="approximate_date_entry_ru">Предполагаемый въезд в Россию</legend>
-                    <input type="date" name="entry.approximate_date_entry_ru" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">&numero; дома</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.building_home_address" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="place_visit_ru">Пункты (города) посещения в России</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.place_visit_ru" id="" value="Москва">Москва
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.place_visit_ru" id="" value="Покров">Покров
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">Квартира</div>
+                    <div class="field_name_a">
+                        <input type="text" name="entry.apt_home_address" id="">
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="going_to_stay">Где Вы планируете остановиться в г. Москве по прибытии в РФ?</legend>
-                    <input type="text" name="entry.going_to_stay" id="">
+                <div class="buttons">
+                    <div class="but_back" onclick="button_back(this)">Назад</div>
+                    <div class="but_next" onclick="validNext(this)">Далее</div>
+                </div>
+            </div>
+
+            <div id="panel-4" hidden>
+                <fieldset class="field">
+                    <div class="field_name_q">Предполагаемый въезд в Россию</div>
+                    <div class="field_name_a req">
+                        <input type="date" name="entry.approximate_date_entry_ru" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="help_in_accommodation">Нужна ли Вам помощь университета в расселении?</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.help_in_accommodation" id="" value="Да">Да
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="entry.help_in_accommodation" id="" value="Нет">Нет
-                            </label>
-                        </li>
-                    </ul>
+                <fieldset class="field">
+                    <div class="field_name_q">Пункты (города) посещения в России</div>
+                    <div class="field_name_a check">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.place_visit_ru" id="" value="Москва">Москва
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.place_visit_ru" id="" value="Покров">Покров
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="contacts">Ваши контакты или контакты Вашего представителя в Москве: телефон, E-mail</legend>
-                    <input type="text" name="entry.contacts" id="">
+                <fieldset class="field">
+                    <div class="field_name_q">Где Вы планируете остановиться в г. Москве по прибытии в РФ?</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.going_to_stay" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend for="permission_personal_data">Согласие на обработку данных</legend>
-                    <input type="checkbox" name="entry.permission_personal_data" id="">Я даю свое согласие на обработку моих персональных данных в соответствии с ФЗ № 152 «О персональных данных»
+                <fieldset class="field">
+                    <div class="field_name_q">Нужна ли Вам помощь университета в расселении?</div>
+                    <div class="field_name_a check">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.help_in_accommodation" id="" value="Да">Да
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="entry.help_in_accommodation" id="" value="Нет">Нет
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
-            </section>
 
-            <input type="submit" value="Submit">
+                <fieldset class="field">
+                    <div class="field_name_q">Ваши контакты или контакты Вашего представителя в Москве: телефон, E-mail</div>
+                    <div class="field_name_a req">
+                        <input type="text" name="entry.contacts" id="" required>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="field">
+                    <div class="field_name_q">Согласие на обработку данных</div>
+                    <div class="field_name_a req">
+                        <input type="checkbox" name="entry.permission_personal_data" id="" required>
+                        <label for="entry.permission_personal_data">Я даю свое согласие на обработку моих персональных данных в соответствии с ФЗ № 152 «О персональных данных»</label>
+                        <div class="error">Это обязательный вопрос.</div>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <div class="but_back" onclick="button_back(this)">Назад</div>
+                    <input type="submit" value="Submit" onclick="validNext(this)">
+                </div>
+            </div>
+
+
+            
+            
 
         </form>
     </div>
     
 
 
-    <!-- <script>
-        const forms = document.querySelectorAll('form'); //1. Получаем все формы
-    
-        forms.forEach(item => { //2. Вызываем функцию обработки для каждой формы
-            postData(item);
-        });
-    
-        function postData(form) {
-            form.addEventListener('submit', (e) => { //3. Отслеживаем событие отправки формы
-                e.preventDefault(); //4. Убираем стандартное событие, чтобы не было перезагрузки страницы
-    
-                const formData = new FormData(form); //5. Получаем данные из формы. В форме у input должен быть обязательно атрибут name, чтобы получить данные из формы
-    
-
-                const file = form.file[0];
-
-                const object = {};
-                formData.forEach(function(value, key){ //6. Преобразуем данные FormData в объект
-                    object[key] = value;
-                });
-    
-                async function test(url) {
-                    let response = await fetch(url, { //7. Url для отправки данных по API
-                        method: 'POST', //8. Метод отправки данных
-                        body: JSON.stringify(object), //9. Преобраузем данные в формат JSON
-                        headers: {
-                            'Content-type': 'application/json' //10. Указываем формат отправки данных 
-                        }
-                    });
-    
-                    if (!response.ok) {
-                        throw new Error(`Не удалось получить данные, статус: ${response.status}, заголовки ответа: ${response.headers.get('Content-Type')}`);
-                    }
-    
-                    let data = await response.json(); //11. Переводим данные в объект
-    
-                    return data;
-                }
-    
-                test('https://jsonplaceholder.typicode.com/posts')
-                    .then(data => console.log(data)) //12. Выводим полученные данные в консоль
-                    .catch(error => console.log(`Что то пошло не так: ${error}`)); //13. Выводим ошибки в консоль
-
-                
-            });
-        }
-    </script> -->
-
-    <!-- <form name="submit-to-google-sheet">
-        <input name="email" type="email" placeholder="Email" id="emails">
-        <input type="file" name="file" id="testimFile">
-        <input type="text" name="textname" id="textname">
-        <button type="submit">Send</button>
-    </form>
-    -->
 
 
-    <!-- <button id="sad"> sad</button> 
+
+
+
+    <button id="sad"> sad</button> 
 
     <script>
         const sad = document.getElementById('sad')
@@ -612,6 +690,7 @@
             const forms = document.forms['main_form']
             const formData = new FormData(forms)
             const object = {};
+
             formData.forEach(function(value, key){ 
                 if (value == 'Другое') {
                     value = document.getElementsByName(key+'.other_option')[0].value
@@ -622,23 +701,22 @@
                 }
                 else {
                     object[key] = value;
+                    console.log(key)
                 }
             });
-            if (object.file) {
-                console.log(object.file)
-            }
-            
+            console.log(object)
+            console.log([...formData])
         }
         sad.addEventListener('click',sadButt)
-    </script>  -->
+    </script> 
     
-    <script>
+    <!-- рабочий -->
+    <!-- <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyuyxDKZYASC3gg4Lj7n7fFLUGXt1U8sMeqqZicOCJFFRNDytbn26PiaUvJ7dyiiULIrQ/exec'
         const form = document.forms['main_form']
 
         form.addEventListener('submit', e => {
             e.preventDefault()
-
             const formData = new FormData(form)
             const object = {};
             formData.forEach(function(value, key){ 
@@ -654,7 +732,6 @@
             });
             
             const file = form.file.files[0] ? form.file.files[0] : ""
-
             if (file) {
                 const fr = new FileReader();
                 fr.readAsArrayBuffer(file);
@@ -680,59 +757,11 @@
                 .catch(error => console.error('Error!', error.message))
             }
         })
-    </script>
-
-    <!-- <form id="form">
-        <input type="text" name="hobby" id="sample" /> 
-        <input name="file" id="uploadfile" type="file" />
-        <input id="submit" type="submit" />
-      </form> -->
-      
-      <!-- <script>
-        const form = document.getElementById("form");
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            const file = form.file.files[0] ? form.file.files[0] : ""
-            //const file = form.file.files[0];
-            const fr = new FileReader();
-          
-            fr.readAsArrayBuffer(file);
-          
-            fr.onload = (f) => {
-                const url = "https://script.google.com/macros/s/AKfycbyJxjPwXZFTcD_dS3PGdweVaTyWroglv7uIYdygixc5P-uqECb0LbEqFiRd11LpFCQLPg/exec"; 
-                const qs = new URLSearchParams({
-                filename: file.name,
-                mimeType: file.type,
-                });
-                fetch(`${url}?${qs}`, {
-                method: "POST",
-                body: JSON.stringify({file: [...new Int8Array(f.target.result)], hobby: document.getElementById("sample").value}),
-                })
-                .then((res) => res.json())
-                .then(console.log)
-                .catch(console.log);
-            };
-        });
-      </script> -->
-    
-      
-    <!-- <script src="https://cdn.jsdelivr.net/gh/tanaikech/HtmlFormObjectParserForGoogleAppsScript_js/htmlFormObjectParserForGoogleAppsScript_js.min.js"></script>
-    <script>
-        const url = "https://script.google.com/macros/s/AKfycbz26vrzt9uXJtC8SDY1wSS9BbVMp2gsiuPZ7FZkh-SS2QQFrA1vErlUefbbZz4EEr8/exec";
-        const form = document.getElementById("main_form");
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const obj = await ParseFormObjectForGAS(form);
-            fetch(url, {
-                
-                method: "POST",
-                body: JSON.stringify(obj),
-            })
-            .then((res) => res.json())
-            .then(console.log)
-            .catch(console.log);
-        });
     </script> -->
-    <script type="text/javascript" src="#"></script>
+
+
+
+    <script type="text/javascript" src="scripts/subm.js"></script>
+    <script type="text/javascript" src="scripts/tabs.js"></script>
 </body>
 </html>

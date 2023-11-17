@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); /* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+
+
+
+/*-------*/
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container {
+    width: 1075px;
+    padding: 0;
+    
+    margin: 40px auto 0;
+}
+
+
+
+.fieldset_block {
+    border:solid;
+    border-radius: 0px;
+    border-color: #ABBED1;
+    border-width: 1px;
+
+    width: 836px;
+
+    padding: 20px 20px 40px 20px;
+    margin: 20px auto;
+    
+}
+
+.field {
+    border:solid;
+    border-radius: 0px;
+    border-color: #ABBED1;
+    border-width: 1px;
+
+    width: 836px;
+
+    padding: 20px 20px 40px 20px;
+    margin: 20px auto;
+    
+}
+
+input[type="radio"] {
+    margin: 0 12px 0 0;
+}
+
+input[type='text'] {
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #ABBED1;
+
+    min-width: 193px;
+    max-width: 320px;
+    width: 320px;
+}
+
+.field_name_q {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.field_name_a {
+    font-size: 1em;
+}
+
+
+
+
+/* prog_list */
+
+.prog_list_def {
+    color:#333333;
+}
+
+.prog_list_active {
+    color: #0671e0;
+}
+
+.prog_list_un {
+    color: #ABBED1
+}
+
+.prog_list_active,.prog_list_def,.prog_list_un {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+/* ***** */
+.error {
+    visibility: hidden;
+    height: 0;
+    color: rgb(217,48,37);
+}
+
+
+.conf {
+    visibility: visible;
+}
+
+.field:has(.conf) {
+    border-color: rgb(217,48,37)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
