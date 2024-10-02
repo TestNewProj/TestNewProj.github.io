@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #111;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #hero {
+    background-color: #222;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e77e11;
+  }
+  
+  #about {
+    background-color: #111;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: auto;
+    color: #ddd;
+  }
+  
+  #services {
+    background-color: #222;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .services-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .services-list h3, .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+  
+  .services-list p, .service p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #aaa;
+  }
+  
+  #contacts {
+    background-color: #111;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .contacts-content {
+    max-width: 800px;
+    margin: auto;
+    color: #ddd;
+  }
+  
+  .contact-info {
+    margin-bottom: 40px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #f39c12;
+    text-decoration: none;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ddd;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e77e11;
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      padding: 60px 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    #about, #services, #contacts {
+      padding: 40px 0;
+    }
+  }
+
+
+
+  header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .header-content {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .logo img {
+      max-width: 100px;
+  }
+
+  .contact-info-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .contact-info-header h3 {
+      margin-bottom: 5px;
+  }
+
+  .contact-info-header a {
+      color: #f39c12;
+      text-decoration: none;
+  }
+
+
+
+
+  

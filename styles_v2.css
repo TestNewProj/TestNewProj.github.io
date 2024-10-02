@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #hero {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #services {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .services-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .services-list h3, .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .services-list p, .service p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  #contacts {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .contacts-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .contact-info {
+    margin-bottom: 40px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      padding: 60px 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    #about, #services, #contacts {
+      padding: 40px 0;
+    }
+  }

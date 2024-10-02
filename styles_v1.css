@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  #hero {
+    background-image: url('https://sun9-42.userapi.com/impg/NgygWX45-vdGnhojSwJ6QCZz4P3FC7I2liyWLQ/RaiFNpL_Z5M.jpg?size=1024x683&quality=95&sign=89e1a766acf21100b586c59648f1e643&type=album');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  #about {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  #services {
+    background-color: #fff;
+    padding: 4rem 0;
+  }
+  
+  .services-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .services-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    flex: 1 1 300px;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .service {
+      flex: 1 1 100%;
+    }
+  }
