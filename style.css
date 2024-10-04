@@ -5,6 +5,7 @@
 
     scroll-padding-top: 104px;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 @font-face {
@@ -83,7 +84,7 @@ header.fixed {
 .contact-info-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .contact-info-header h3 {
@@ -171,10 +172,15 @@ header.fixed {
 .about-me {
     width: 35%;
     max-width: 455px;
-    height: 650px;
+    height: 682px;
     background-color: gray; 
     margin-right: 40px;
     margin-left: 50px;
+    /* background: url(me.jfif); */
+}
+
+.about-me img {
+    max-width: 455px;
 }
 
 .about-details {
@@ -199,6 +205,24 @@ summary img {
 }
 
 details {
+    margin-bottom: 30px;
+}
+
+.about-docs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.doc {
+    max-width: 30%;
+}
+
+.doc img {
+    width: 100%;
+}
+
+details a img{
     margin-bottom: 30px;
 }
 
@@ -265,7 +289,7 @@ details summary{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .services-list h3, .service h3 {
@@ -297,6 +321,10 @@ details summary{
 
 
 /* slider */
+#example-work {
+    padding: 60px 0;
+}
+
 .slider{
     user-select: none;
 
@@ -392,7 +420,7 @@ details summary{
 
 /* map */
 .map {
-    width: 1300px;
+    max-width: 100%;
     margin: auto;
     max-height: 400px;
 }
@@ -461,26 +489,143 @@ footer {
 
 
 
+/* fancybox */
+
+.fancybox-image {
+    width: 90%;
+}
+
+
+@media (max-width:1330px) {
+    footer {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width:1240px) {
+    .header-content {
+        padding: 5px 30px
+    }
+
+    .nav {
+        display: none;
+    }
 
 
 
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me {
+        margin: 0 0 35px 0;
+        width: 100%;
+    }
+
+    .about-det details {
+        text-align: center;
+    }
+
+    .about-ach {
+        padding: 0;
+    }
+
+    .ach {
+        width: 170px;
+    }
+
+    footer {
+        padding: 25px 40px;
+    }
+}
 
 
+@media (max-width: 820px) {
+    .hero-content {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 770px) {
+    .about-ach {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 715px) {
+    .logo img {
+        max-width: 250px;
+    }
 
 
+    .about-details {
+        width: 500px
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .contact-info {
+        width: 40%;
+    }
+
+    .ip-info img {
+        max-width: 200px;
+    }
+}
 
 
+@media (max-width: 600px) {
+    .ip-info {
+        max-width: 40%;
+    }
+    
+}
 
+@media (max-width: 530px) {
+    #about {
+        padding: 60px 30px;
+    }
+    .about-details {
+        max-width: 400px;
+    }
 
+    .about-ach {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .about-me {
+        width: auto;
+        height: auto;
+        background-color: #fff;
+    }
 
+    .about-me img {
+        max-width: 400px;
+    }
 
+    .ach {
+        margin-bottom: 10px;
+    }
 
+    .doc {
+        max-width: 40%;
+    }
 
+}
 
+@media (max-width: 450px) {
+    .about-details {
+        max-width: 320px;
+    }
 
-
-
+    .about-me img {
+        max-width: 320px;
+    }
+}
 
 
 
