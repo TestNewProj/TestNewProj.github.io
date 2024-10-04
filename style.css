@@ -28,6 +28,9 @@ h1, h2, h3 {
     color: #333; /* изменен на темно-серый */
 }
 
+span {
+    color:#f39c12;
+}
 
 /* header */
 header {
@@ -346,10 +349,11 @@ details summary{
 }
 .slider .list img{
     display: block;
-    width: 55%;
+    max-width: 45%;
     max-width: 100vw;
     height: 100%;
-    object-fit: cover;
+    padding-right: 30px;
+    /* object-fit: cover; */
 }
 .slider .buttons{
     position: absolute;
@@ -368,7 +372,7 @@ details summary{
     border: none;
     font-family: monospace;
     font-weight: bold;
-/* border: solid 1px #333; */
+    border: solid 1px #333;
 }
 .slider .dots{
     position: absolute;
@@ -398,22 +402,17 @@ details summary{
 
 .item {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: 1300px;
     width: 100vw;
     scroll-behavior: smooth;
+    padding: 0 50px;
 }
 
 .description {
     width: 45%;
 }
 
-
-@media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
-    }
-}
 
 
 
@@ -551,6 +550,28 @@ footer {
     .about-ach {
         justify-content: space-around;
     }
+
+    .slider {
+        min-height: 100vh;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .list .item img {
+        padding: 0 0 20px 0;
+    }
+
+    .description {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .dots {
+        bottom: -20px;
+    }
+
 }
 
 @media (max-width: 715px) {
