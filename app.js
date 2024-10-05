@@ -149,5 +149,19 @@ function handleMouseUp(event) {
 
 
 Fancybox.bind("[data-fancybox]", {
-  // Your custom options
 });
+
+
+
+
+
+
+
+// burger-menu
+const menuLinks = document.querySelectorAll('.menu-list a');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('burger-checkbox').checked = false;
+    });
+  });
