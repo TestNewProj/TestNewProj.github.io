@@ -20,6 +20,7 @@ body {
     line-height: 1.6;
     color: #333; /* изменен на темно-серый */
     background-color: #fff; /* изменен на белый */
+    font-size: 15px;
 }
 
 h1, h2, h3 {
