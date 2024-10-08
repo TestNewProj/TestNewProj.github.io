@@ -205,6 +205,7 @@ header.fixed {
   }
 
   #lg_menu {
+    min-width: 200px;
     max-width: 30%;
     max-height: 70px;
     padding-left: 20px;
@@ -450,7 +451,7 @@ details summary{
     max-width: 100vw;
     height: 100%;
     padding-right: 30px;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 .slider .buttons{
     position: absolute;
@@ -469,7 +470,7 @@ details summary{
     border: none;
     font-family: monospace;
     font-weight: bold;
-    border: solid 1px #333;
+    border: solid 1px #999;
 }
 .slider .dots{
     position: absolute;
@@ -490,7 +491,7 @@ details summary{
     margin: 10px;
     border-radius: 20px;
     transition: 0.5s;
-    border: solid 1px #333;
+    border: solid 1px #999;
 }
 .slider .dots li.active{
     width: 30px;    
@@ -510,7 +511,14 @@ details summary{
     width: 45%;
 }
 
+.desc_link {
+    display: inline-block;
+    margin-top: 40px;
+}
 
+.desc_link:visited, .desc_link:link {
+    color: #f39c12
+}
 
 
 
@@ -652,7 +660,7 @@ footer {
     }
 
     .slider {
-        min-height: 180vw;
+        min-height: 185vw;
     }
 
     .slider .list {
@@ -692,7 +700,7 @@ footer {
     }
 
     .slider {
-        min-height: 185vw;
+        min-height: 190vw;
     }
 
     footer {
@@ -710,7 +718,7 @@ footer {
 
 @media (max-width: 640px) {
     .slider {
-        min-height: 190vw;
+        min-height: 195vw;
     }
 }
 
@@ -724,7 +732,7 @@ footer {
 
 @media (max-width: 560px) {
     .slider {
-        min-height: 195vw;
+        min-height: 200vw;
     }
 }
 
@@ -763,13 +771,13 @@ footer {
 
 @media (max-width: 505px) {
     .slider {
-        min-height: 200vw;
+        min-height: 210vw;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 465px) {
     .slider {
-        min-height: 220vw;
+        min-height: 225vw;
     }
 }
 
@@ -806,18 +814,27 @@ footer {
 
 @media (max-width: 405px) {
     .slider {
-        min-height: 230vw;
+        min-height: 240vw;
     }
 }
 
 @media (max-width: 360px) {
     .slider {
-        min-height: 235vw;
+        min-height: 245vw;
     }
 }
 
+@media (max-width: 375px) {
+    .slider {
+        min-height: 255vw;
+    }
+}
 
-
+@media (max-width: 320px) {
+    .slider {
+        min-height: 265vw;
+    }
+}
 
 
 

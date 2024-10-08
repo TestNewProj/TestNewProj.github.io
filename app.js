@@ -84,7 +84,7 @@ function touchUp(event) {
   if (cl == 1) {
     const deltaX = event.touches[0].clientX - startX;
     const deltaY = event.touches[0].clientY - startY;
-    // if (Math.abs(deltaX) > Math.abs(deltaY)
+
     if ((deltaX > 10) && (Math.abs(deltaX) > Math.abs(deltaY))) {
       active = active - 1 >= 0 ? active - 1 : lengthItems;
 
@@ -118,7 +118,6 @@ function handleMouseUp(event) {
   if (cl == 1) {
     const deltaX = event.clientX - startX;
     const deltaY = event.clientY - startY;
-    // if (Math.abs(deltaX) > Math.abs(deltaY)
     if ((deltaX > 10) && (Math.abs(deltaX) > Math.abs(deltaY))) {
       active = active - 1 >= 0 ? active - 1 : lengthItems;
 
@@ -157,7 +156,7 @@ Fancybox.bind("[data-fancybox]", {
 
 
 
-// burger-menu
+//menu
 const menuLinks = document.querySelectorAll('.menu-list a');
 
   menuLinks.forEach(link => {
