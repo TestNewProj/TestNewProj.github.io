@@ -473,7 +473,7 @@ details summary{
 }
 .slider .dots{
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 0;
     color: #f39c12;
     width: 100%;
